@@ -19,7 +19,8 @@ public class MyPlayer {
         System.out.println("MyPlayer Move");
 
         gameBoard = pBoard;
-        toColums();
+        //toColums();
+        threexthreeBoards();
         int column = 0;
         int row = 0;
 
@@ -49,15 +50,34 @@ public class MyPlayer {
             System.out.println(chipsInColum);
             for(int z = 0; z < columns.length; z++) {
                 columns[z] = chipsInColum;
+
             }
             chipsInColum = 0;
         }
-        System.out.println("PRINTING FROM ARRAY");
-        for(int z = 0; z < columns.length; z++) {
-            System.out.println(columns[z]);
+
+
+
+    }
+    public void threexthreeBoards(){
+        int chipsinCol = 0;
+        int endRow =  3;
+        int endCol = 3;
+
+        for(int x = 0; x < 19; x++) {
+            System.out.println("Board " + x +": ");
+            for (int row = 0; row < endRow; row++) {
+                for (int col = 0; col < endCol; col++) {
+                    chipsinCol++;
+
+                }
+                System.out.println(chipsinCol);
+                chipsinCol = 0;
+
+            }
+            endRow = endRow - 1;
+            endCol = endCol - 1;
+
         }
-
-
     }
 
 }
