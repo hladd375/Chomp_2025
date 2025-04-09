@@ -60,28 +60,29 @@ public class MyPlayer {
     }
     public void threexthreeBoards(){
         int chipsinCol = 0;
-        int endRow =  3;
-        int endCol = 3;
+        int endA =  3;
+        int endB = 3;
+        int endC = 3;
 
-        for(int x = 0; x < 19; x++) {
-            System.out.println("Board " + x +": ");
-            for (int row = 0; row < endRow; row++) {
-                for (int col = 0; col < endCol; col++) {
-                    chipsinCol++;
-
-
-
+            for (int a = 0; a < endA; a++) {
+                System.out.println(a);
+                for (int b = 0; b < endB; b++) {
+                    System.out.println(b);
+                    for (int c = 0; c < endC; c++) {
+                        System.out.println(c);
+                    }
 
 
                 }
                 System.out.println(chipsinCol);
                 chipsinCol = 0;
+                System.out.println("Next Board");
 
             }
-            endRow = endRow - 1;
-            endCol = endCol - 1;
 
-        }
+
+
+
     }
 
 }
