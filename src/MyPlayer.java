@@ -69,6 +69,10 @@ public class MyPlayer {
                 for (int col = 0; col < endCol; col++) {
                     chipsinCol++;
 
+
+
+
+
                 }
                 System.out.println(chipsinCol);
                 chipsinCol = 0;
