@@ -59,6 +59,8 @@ public class MyPlayer {
 
     }
     public void threexthreeBoards(){
+
+
         int chipsinCol = 0;
         int endA =  3;
         int endB = 3;
