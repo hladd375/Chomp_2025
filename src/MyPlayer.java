@@ -62,23 +62,53 @@ public class MyPlayer {
 
 
         int chipsinCol = 0;
-        int endA =  3;
-        int endB = 3;
-        int endC = 3;
+        int endA =  4;
+        int endB = 4;
+        int endC = 4;
 
-            for (int a = 0; a < endA; a++) {
-                System.out.println(a);
+            for (int a = 1; a < endA; a++) {
                 for (int b = 0; b < endB; b++) {
-                    System.out.println(b);
                     for (int c = 0; c < endC; c++) {
-                        System.out.println(c);
+                        if(c <= b && b <= a){
+                            System.out.print("Original board: ");
+                            System.out.print(a);
+                            System.out.print(b);
+                            System.out.print(c);
+                            System.out.println("");
+                            System.out.println("Resulting Boards: ");
+                            int c1;
+                            int b1;
+                            int a1;
+                            for(c1 = c - 1; c1 >= 0; c1 --){
+                                System.out.print(a);
+                                System.out.print(b);
+                                System.out.print(c1);
+                                System.out.println("");
+
+                            }
+                            for(b1 = b - 1; b1 >= 0; b1 --){
+                                System.out.print(a);
+                                System.out.print(b1);
+                                System.out.print(c1);
+                                System.out.println("");
+                            }
+                            for(a1 = a - 1; a1 >= 0; a1 --){
+                                System.out.print(a1);
+                                System.out.print(b1);
+                                System.out.print(c1);
+                                System.out.println("");
+                            }
+                        }
+
                     }
 
 
                 }
-                System.out.println(chipsinCol);
+                //System.out.println(chipsinCol);
                 chipsinCol = 0;
-                System.out.println("Next Board");
+                //System.out.println("Next Board");
+
+                //make a list of loose boards --- if any resulting board equals a loose board then I know it can be a win board -- if all resulting boards are win boards it is a loose board --- 100 is a loose board
 
             }
 
