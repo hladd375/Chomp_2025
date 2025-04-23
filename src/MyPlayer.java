@@ -86,13 +86,16 @@ public class MyPlayer {
                                 System.out.println("");
 
                             }
+                            c1 = c;
                             for(b1 = b - 1; b1 >= 0; b1 --){
+                                //compare b1 to c1, if c1 is greater than b1 then make c1 eqaul b1
                                 System.out.print(a);
                                 System.out.print(b1);
                                 System.out.print(c1);
                                 System.out.println("");
                             }
                             for(a1 = a - 1; a1 >= 0; a1 --){
+                                //if staTEMTNS?
                                 System.out.print(a1);
                                 System.out.print(b1);
                                 System.out.print(c1);
